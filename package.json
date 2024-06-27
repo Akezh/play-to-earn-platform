@@ -1,0 +1,35 @@
+{
+  "name": "@ethereum-starter/monorepo",
+  "version": "1.0.0",
+  "description": "Strong Ethereum starter",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**",
+      "**/hardhat-ts",
+      "**/hardhat-ts/**"
+    ]
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn workspace @ethereum-starter/frontend dev",
+    "deploy": "yarn workspace @ethereum-starter/hardhat deploy",
+    "compile": "yarn workspace @ethereum-starter/hardhat compile",
+    "chain": "yarn workspace @ethereum-starter/hardhat chain",
+    "lint": "yarn workspaces run lint",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn lint"
+    ]
+  }
+}

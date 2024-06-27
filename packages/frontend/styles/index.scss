@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  background: #141a1e;
+}
+
+.connect-account {
+  background: linear-gradient(50deg, #784ffe -6.1%, #6d41fd 49.46%, #5f32f4 104.92%);
+  color: white;
+}
+
+.account-block:hover {
+  background-color: #202a30;
+  // cursor: pointer;
+}
+
+.account-balance {
+  color: linear-gradient(50deg, #784ffe -6.1%, #6d41fd 49.46%, #5f32f4 104.92%);
+}
+
+.silver {
+  background: linear-gradient(258.51deg, #6b778b 4.55%, #abb0b9);
+}
+
+.gold {
+  background: linear-gradient(258.51deg, #ffb600 4.55%, #eed08a);
+}
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}

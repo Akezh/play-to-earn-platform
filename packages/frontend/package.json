@@ -1,0 +1,49 @@
+{
+  "name": "@ethereum-starter/frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "yarn eslint",
+    "eslint": "eslint --ignore-path .gitignore . --fix",
+    "client:types": "rm -rf types && rm -rf artifacts && cp -r '../hardhat/artifacts' artifacts && cp -r '../hardhat/types' types"
+  },
+  "dependencies": {
+    "@usedapp/core": "^0.4.8",
+    "axios": "^0.21.1",
+    "clsx": "^1.1.1",
+    "ethers": "^5.4.7",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "react-toastify": "^9.0.4",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "autoprefixer": "^10.3.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "postcss": "^8.3.7",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.4.3"
+  },
+  "license": "MIT"
+}
